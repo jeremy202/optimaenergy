@@ -1,0 +1,47 @@
+import type { Config } from 'tailwindcss'
+
+export default <Partial<Config>>{
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './app.vue'
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: ['Fraunces', 'Georgia', 'serif'],
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif']
+      },
+      colors: {
+        navy: 'var(--navy)',
+        'navy-deep': 'var(--navy-deep)',
+        blue: 'var(--blue)',
+        'blue-soft': 'var(--blue-soft)',
+        amber: 'var(--amber)',
+        paper: 'var(--paper)',
+        'paper-2': 'var(--paper-2)',
+        surface: 'var(--surface)',
+        ink: 'var(--ink)',
+        'ink-muted': 'var(--ink-muted)',
+        'ink-soft': 'var(--ink-soft)',
+        line: 'var(--line)',
+        'line-2': 'var(--line-2)'
+      },
+      boxShadow: {
+        card: '0 1px 3px var(--shadow)',
+        lift: '0 14px 28px var(--shadow)',
+        floating: '0 8px 20px var(--shadow)'
+      },
+      borderRadius: {
+        xl2: '20px',
+        xl3: '24px'
+      },
+      maxWidth: {
+        content: '1160px'
+      }
+    }
+  },
+  plugins: []
+}

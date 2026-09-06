@@ -1,0 +1,43 @@
+export default defineNuxtConfig({
+  compatibilityDate: '2024-11-01',
+  devtools: { enabled: false },
+
+  modules: ['@nuxtjs/tailwindcss'],
+
+  css: ['~/assets/css/main.css'],
+
+  app: {
+    head: {
+      titleTemplate: '%s | Optima Global Energy Services',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          name: 'description',
+          content:
+            'Optima Global Energy Services Limited — well engineering, project management, manpower outsourcing and inspection/QA-QC for oil and gas operators across Nigeria and West Africa.',
+        },
+        { name: 'robots', content: 'index, follow' },
+        { property: 'og:locale', content: 'en_GB' },
+        { property: 'og:site_name', content: 'Optima Global Energy Services Limited' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:site', content: '@OptimalEnergyNG' },
+        { name: 'theme-color', content: '#0B1F40' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/logo.png' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap',
+        },
+      ],
+    },
+  },
+
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css',
+    configPath: 'tailwind.config.ts',
+  },
+})
