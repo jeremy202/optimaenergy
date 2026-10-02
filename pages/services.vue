@@ -353,7 +353,6 @@ const typicalDeliverables = [
           <IconCard
             v-for="m in engagementModels"
             :key="m.number"
-            :number="m.number"
             :icon="''"
             :title="m.title"
             :text="m.text"

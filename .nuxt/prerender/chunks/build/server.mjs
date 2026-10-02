@@ -608,7 +608,7 @@ const _routes = [
   {
     name: "services",
     path: "/services",
-    component: () => import('./services-BmRHiNFl.mjs')
+    component: () => import('./services-YuW-f4g2.mjs')
   },
   {
     name: "assurance",
